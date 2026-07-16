@@ -20,7 +20,7 @@
 
 1. Склонировать репозиторий:
    ```bash
-   git clone <ссылка на этот репозиторий>
+   git clone https://github.com/m-lead/ticket-writer.git
    ```
 2. Скопировать `.claude/skills/` в свой проект (или в `~/.claude/skills/` для глобального доступа):
    ```bash
