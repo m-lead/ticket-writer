@@ -1,6 +1,6 @@
-# GTP Ticket Writer
+# Ticket Writer
 
-Скилл для Claude Code (+ Custom GPT), который помогает команде Revenue Team писать Jira-ready описания задач через слэш-команды. Задачи в GTP часто приходят на grooming неподготовленными: размытый scope, нет AC, смешаны research и implementation, непонятно к какому продукту относится. GTP Ticket Writer задаёт уточняющие вопросы и выдаёт готовое markdown-описание, которое можно сразу вставить в Jira.
+Скилл для Claude Code, который помогает команде Revenue Team писать Jira-ready описания задач через слэш-команды. Задачи в GTP часто приходят на grooming неподготовленными: размытый scope, нет AC, смешаны research и implementation, непонятно к какому продукту относится. Ticket Writer задаёт уточняющие вопросы и выдаёт готовое markdown-описание, которое можно сразу вставить в Jira.
 
 ## Команды
 
@@ -16,7 +16,7 @@
 
 Каждая команда прогоняет задачу через несколько «линз» (роль в команде — Delivery, Engineer, Analyst, QA) и задаёт уточняющие вопросы, прежде чем выдать финальное описание. Подробности по каждой команде — в `.claude/skills/<команда>/SKILL.md`.
 
-## Быстрый старт: Claude Code
+## Быстрый старт
 
 1. Склонировать репозиторий:
    ```bash
@@ -24,31 +24,10 @@
    ```
 2. Скопировать `.claude/skills/` в свой проект (или в `~/.claude/skills/` для глобального доступа):
    ```bash
-   cp -r gtp-ticket-writer/.claude/skills ~/.claude/skills
+   cp -r ticket-writer/.claude/skills ~/.claude/skills
    ```
 3. Перезапустить Claude Code.
 4. Проверить: набрать `/bug` — должен появиться flow (описание команды + подсказка ввести текст бага).
-
-## Быстрый старт: Custom GPT
-
-1. После публикации GPT в ChatGPT открыть ссылку на Custom GPT «GTP Ticket Writer».
-2. Нажать на нужный conversation starter (например `/bug`) или напечатать команду вручную.
-3. Ответить на уточняющие вопросы. Скопировать результат в Jira.
-
-### Как собрать Custom GPT (для того, кто настраивает)
-
-Материалы для сборки уже лежат в папке `custom-gpt/`:
-
-1. В ChatGPT: Explore GPTs → Create → Configure.
-2. Поле **Instructions** — вставить содержимое `custom-gpt/instructions.md` (текст под чертой в этом файле).
-3. Поле **Knowledge** — загрузить `custom-gpt/knowledge.md`.
-4. **Conversation starters** — добавить семь: `/feature`, `/story`, `/task`, `/subtask`, `/bug`, `/research`, `/spike`.
-5. Включить **Code Interpreter**.
-6. Опубликовать GPT и сохранить ссылку для использования.
-
-## Какой вариант выбрать?
-
-Результат одинаковый — оба варианта используют один и тот же контент (`custom-gpt/knowledge.md` — зеркало `.claude/skills/`). Выбор зависит только от того, чем пользователю удобнее: Claude Code — если уже работаете в терминале/IDE, Custom GPT — если предпочитаете браузер и ChatGPT.
 
 ## Пример: вход → вопросы → выход (`/bug`)
 
@@ -114,17 +93,11 @@ VIP-статус, баланс 0.
 
 ## Как обновлять правила
 
-Весь контент дублируется в двух местах, но источник один по смыслу:
-- `.claude/skills/shared/gtp-conventions.md` + 7 `.claude/skills/<команда>/SKILL.md` — для Claude Code.
-- `custom-gpt/knowledge.md` — то же самое одним файлом, для Custom GPT.
-
-При изменении правил редактировать оба места синхронно: сначала `.claude/skills/`, затем перенести изменение в `custom-gpt/knowledge.md` и перезалить Knowledge file в настройках GPT.
+Общие правила и конвенции лежат в `.claude/skills/shared/gtp-conventions.md`, флоу конкретных команд — в `.claude/skills/<команда>/SKILL.md`.
 
 ## Troubleshooting
 
 - **Команда `/bug` и другие не появляются в Claude Code** — проверить, что `.claude/skills/` лежит в `~/.claude/skills/` или `<проект>/.claude/skills/`, и что Claude Code перезапущен после копирования.
-- **GPT игнорирует flow, отвечает не по шаблону** — проверить, что файл `custom-gpt/knowledge.md` загружен в Knowledge (не просто вставлен текстом в Instructions — он длиннее лимита в 8000 символов) и что включён Code Interpreter.
-- **GPT путает команды между собой** — убедиться, что в Instructions есть инструкция «искать раздел `## /bug` и т.д. в Knowledge file», а не пытаться заново придумывать flow.
 
 ## План пилота
 
