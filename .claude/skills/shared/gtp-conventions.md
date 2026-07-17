@@ -1,6 +1,6 @@
 # GTP conventions
 
-Общие правила для всех команд `/feature`, `/story`, `/task`, `/subtask`, `/bug`, `/research`, `/spike`. Каждый SKILL.md ссылается сюда вместо дублирования.
+Общие правила для всех команд `/feature`, `/story`, `/task`, `/subtask`, `/bug`, `/research`, `/spike`, `/risk`, `/release`, `/sprint-goal`, `/retro-action`. Каждый SKILL.md ссылается сюда вместо дублирования.
 
 ## Контекст команды
 
@@ -9,6 +9,9 @@
 - PI = 6 спринтов × 2 недели. 1 рабочий день = 6 продуктивных часов.
 - Scope-решения принимает PM (Александр Голубин).
 - Окружения: dev, purgatory (stage), stage, prod glory, prod divine, prod banger.
+- ROAM-шкала для рисков: Resolved / Owned / Accepted / Mitigated.
+- Impact-шкала: Catastrophic / Major / Moderate / Minor / Insignificant.
+- Probability-шкала: Almost certain / Very likely / Likely / Unlikely / Very unlikely.
 
 ## Стиль
 

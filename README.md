@@ -13,8 +13,21 @@
 | `/bug` | Bug | QA, Dev, PM |
 | `/research` | Task (метка Research) | Dev, Lead, Delivery |
 | `/spike` | Task (метка Spike) | Dev, Lead |
+| `/risk` | Risk (Agile Hive) | Delivery, Lead, PM |
+| `/release` | Release | Delivery, Lead, PM |
+| `/sprint-goal` | Sprint Goal | Delivery, PM, Lead |
+| `/retro-action` | Retro Action Item | Delivery, все участники ретро |
 
 Каждая команда прогоняет задачу через несколько «линз» (роль в команде — Delivery, Engineer, Analyst, QA) и задаёт уточняющие вопросы, прежде чем выдать финальное описание. Подробности по каждой команде — в `.claude/skills/<команда>/SKILL.md`.
+
+## Линзы по командам
+
+| Команда | Линзы |
+|---|---|
+| `/risk` | Delivery → Engineer |
+| `/release` | Delivery → Engineer |
+| `/sprint-goal` | Delivery → Analyst |
+| `/retro-action` | Delivery |
 
 ## Быстрый старт
 
