@@ -9,7 +9,7 @@ argument-hint: "[вопрос, который нужно исследовать]
 disable-model-invocation: true
 ---
 
-# /research
+# /ticket-writer:research
 
 Общие правила, стиль и запреты — см. [gtp-conventions.md](../shared/gtp-conventions.md). Обязательно следуй им.
 

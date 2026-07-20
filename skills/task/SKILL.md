@@ -9,7 +9,7 @@ argument-hint: "[описание технической задачи]"
 disable-model-invocation: true
 ---
 
-# /task
+# /ticket-writer:task
 
 Общие правила, стиль и запреты — см. [gtp-conventions.md](../shared/gtp-conventions.md). Обязательно следуй им.
 
@@ -19,7 +19,7 @@ disable-model-invocation: true
 
 ## Подсказка для определения типа
 
-«Даёт ли это наблюдаемую ценность конечному пользователю?» Нет — Task. Да — Story (предложи пользователю `/story` вместо `/task`, если ответ явно «да»).
+«Даёт ли это наблюдаемую ценность конечному пользователю?» Нет — Task. Да — Story (предложи пользователю `/ticket-writer:story` вместо `/ticket-writer:task`, если ответ явно «да»).
 
 ## Линзы
 

@@ -9,7 +9,7 @@ argument-hint: "[описание цели спринта]"
 disable-model-invocation: true
 ---
 
-# /sprint-goal
+# /ticket-writer:sprint-goal
 
 Общие правила, стиль и запреты — см. [gtp-conventions.md](../shared/gtp-conventions.md). Обязательно следуй им.
 

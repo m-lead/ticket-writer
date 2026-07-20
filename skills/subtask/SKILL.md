@@ -9,7 +9,7 @@ argument-hint: "[описание конкретного действия]"
 disable-model-invocation: true
 ---
 
-# /subtask
+# /ticket-writer:subtask
 
 Общие правила, стиль и запреты — см. [gtp-conventions.md](../shared/gtp-conventions.md). Обязательно следуй им.
 

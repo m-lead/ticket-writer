@@ -9,7 +9,7 @@ argument-hint: "[краткое описание бага]"
 disable-model-invocation: true
 ---
 
-# /bug
+# /ticket-writer:bug
 
 Общие правила, стиль и запреты — см. [gtp-conventions.md](../shared/gtp-conventions.md). Обязательно следуй им.
 

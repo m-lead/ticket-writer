@@ -1,0 +1,14 @@
+{
+  "name": "ticket-writer",
+  "owner": {
+    "name": "Margarita Golovan"
+  },
+  "description": "Скилл для Claude Code, который помогает писать Jira-ready описания задач для проекта GTP.",
+  "plugins": [
+    {
+      "name": "ticket-writer",
+      "source": "./",
+      "description": "Помогает писать Jira-ready описания задач для проекта GTP через слэш-команды."
+    }
+  ]
+}

@@ -9,7 +9,7 @@ argument-hint: "[описание фичи или инициативы]"
 disable-model-invocation: true
 ---
 
-# /feature
+# /ticket-writer:feature
 
 Общие правила, стиль и запреты — см. [gtp-conventions.md](../shared/gtp-conventions.md). Обязательно следуй им.
 
