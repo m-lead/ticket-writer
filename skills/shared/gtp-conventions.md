@@ -1,6 +1,6 @@
 # GTP conventions
 
-Общие правила для всех команд `/ticket-writer:feature`, `/ticket-writer:story`, `/ticket-writer:task`, `/ticket-writer:subtask`, `/ticket-writer:bug-report`, `/ticket-writer:research`, `/ticket-writer:spike`, `/ticket-writer:risk`, `/ticket-writer:release`, `/ticket-writer:sprint-goal`, `/ticket-writer:retro-action`. Каждый SKILL.md ссылается сюда вместо дублирования.
+Общие правила для всех команд `/ticket-writer:feature`, `/ticket-writer:story`, `/ticket-writer:task`, `/ticket-writer:subtask`, `/ticket-writer:bug-report`, `/ticket-writer:research`, `/ticket-writer:spike`, `/ticket-writer:risk`, `/ticket-writer:release`, `/ticket-writer:release-version`, `/ticket-writer:sprint-goal`, `/ticket-writer:retro-action`. Каждый SKILL.md ссылается сюда вместо дублирования.
 
 ## Контекст команды
 

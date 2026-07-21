@@ -17,6 +17,7 @@
 | `/ticket-writer:spike` | Task (метка Spike) | Dev, Lead |
 | `/ticket-writer:risk` | Risk (Agile Hive) | Delivery, Lead, PM |
 | `/ticket-writer:release` | Release | Delivery, Lead, PM |
+| `/ticket-writer:release-version` | Jira Version (Fix Version) | Delivery, Lead, Dev |
 | `/ticket-writer:sprint-goal` | Sprint Goal | Delivery, PM, Lead |
 | `/ticket-writer:retro-action` | Retro Action Item | Delivery, все участники ретро |
 
@@ -70,6 +71,12 @@ claude --plugin-dir ./ticket-writer
 ```
 Скилл отделит фичу от задач реализации и предложит список `/ticket-writer:task` / `/ticket-writer:subtask` с Goal и AC для каждой.
 
+**Сгенерировать имя и описание Jira Version для релиза:**
+```
+/ticket-writer:release-version Glory, BE, PI8 S5 R1, 22.07.2026, бонусная система и фикс конвертации валют
+```
+Скилл запросит недостающее (сервисы с тегами, список задач, план отката) и выдаст имя Version в формате `[Revenue/BE]: Glory — PI8 S5 R1 — …` вместе с полным markdown-описанием (задачи, сервисы, rollback, тестирование, deployment info).
+
 Полный пример вход → вопросы → ответ → выход для `/ticket-writer:bug-report` — в [skills/bug-report/SKILL.md](skills/bug-report/SKILL.md).
 
 ## Структура репозитория
@@ -92,6 +99,10 @@ ticket-writer/
     ├── spike/SKILL.md                 — /ticket-writer:spike — короткое timeboxed-исследование
     ├── risk/SKILL.md                  — /ticket-writer:risk — риск (Agile Hive)
     ├── release/SKILL.md               — /ticket-writer:release — релиз
+    ├── release-version/
+    │   ├── SKILL.md                   — /ticket-writer:release-version — имя и описание Jira Version
+    │   ├── naming.md                  — конвенция именования Version, edge cases
+    │   └── template.md                — чистый шаблон описания Version
     ├── sprint-goal/SKILL.md           — /ticket-writer:sprint-goal — цель спринта
     └── retro-action/SKILL.md          — /ticket-writer:retro-action — action item из ретро
 ```
