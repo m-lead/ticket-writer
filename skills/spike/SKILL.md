@@ -10,7 +10,7 @@ argument-hint: "[конкретный вопрос для spike]"
 disable-model-invocation: true
 ---
 
-# /spike
+# /ticket-writer:spike
 
 Общие правила, стиль и запреты — см. [gtp-conventions.md](../shared/gtp-conventions.md). Обязательно следуй им.
 

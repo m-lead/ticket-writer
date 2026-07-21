@@ -9,7 +9,7 @@ argument-hint: "[описание фичи или инициативы]"
 disable-model-invocation: true
 ---
 
-# /feature
+# /ticket-writer:feature
 
 Общие правила, стиль и запреты — см. [gtp-conventions.md](../shared/gtp-conventions.md). Обязательно следуй им.
 
@@ -68,11 +68,6 @@ Delivery → Engineer → Analyst. Прогоняй задачу через ни
 ## Current Behavior → Expected Behavior
 (если меняется существующее поведение)
 
-## Acceptance Criteria
-1. …
-2. …
-(3–8 проверяемых критериев)
-
 ## Technical Notes
 Модули/сервисы, которые затрагиваются. Технические риски. Зависимости.
 
@@ -81,6 +76,11 @@ Delivery → Engineer → Analyst. Прогоняй задачу через ни
 
 ## Suggested Task Breakdown
 (если нужна декомпозиция — список задач с Goal и примерной оценкой)
+
+## Acceptance Criteria
+1. …
+2. …
+(3–8 проверяемых критериев)
 ```
 
 Объём: до 1 страницы. PI-level — можно с черновыми AC. Sprint-level — полный набор.

@@ -9,7 +9,7 @@ argument-hint: "[описание пользовательской задачи]
 disable-model-invocation: true
 ---
 
-# /story
+# /ticket-writer:story
 
 Общие правила, стиль и запреты — см. [gtp-conventions.md](../shared/gtp-conventions.md). Обязательно следуй им.
 
@@ -19,7 +19,7 @@ disable-model-invocation: true
 
 ## Подсказка для определения типа
 
-«Даёт ли эта задача наблюдаемую ценность конечному пользователю?» Да — Story. Нет — Task (предложи пользователю `/task` вместо `/story`, если ответ явно «нет»).
+«Даёт ли эта задача наблюдаемую ценность конечному пользователю?» Да — Story. Нет — Task (предложи пользователю `/ticket-writer:task` вместо `/ticket-writer:story`, если ответ явно «нет»).
 
 ## Линзы
 
@@ -68,10 +68,6 @@ Delivery → Engineer → Analyst. Прогоняй задачу через ни
 ## Current Behavior → Expected Behavior
 (если применимо)
 
-## Acceptance Criteria
-1. …
-2. …
-
 ## Edge Cases
 (если есть нетривиальные сценарии)
 
@@ -80,6 +76,10 @@ Delivery → Engineer → Analyst. Прогоняй задачу через ни
 
 ## Dependencies / Blockers
 (если есть)
+
+## Acceptance Criteria
+1. …
+2. …
 ```
 
 Объём: до 1 страницы.

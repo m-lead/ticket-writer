@@ -1,5 +1,5 @@
 ---
-name: bug
+name: bug-report
 description: >
   Помогает написать Jira-ready описание бага для проекта GTP. Используй когда
   нужно оформить баг-репорт. Проходит через линзу Delivery, Engineer и QA.
@@ -9,7 +9,7 @@ argument-hint: "[краткое описание бага]"
 disable-model-invocation: true
 ---
 
-# /bug
+# /ticket-writer:bug-report
 
 Общие правила, стиль и запреты — см. [gtp-conventions.md](../shared/gtp-conventions.md). Обязательно следуй им.
 
