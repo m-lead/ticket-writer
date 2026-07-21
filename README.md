@@ -12,7 +12,7 @@
 | `/ticket-writer:story` | Story | PM, Delivery, Lead, Dev |
 | `/ticket-writer:task` | Task | Dev, Delivery, Lead |
 | `/ticket-writer:subtask` | Sub-task | Dev, Delivery |
-| `/ticket-writer:bug` | Bug | QA, Dev, PM |
+| `/ticket-writer:bug-report` | Bug | QA, Dev, PM |
 | `/ticket-writer:research` | Task (метка Research) | Dev, Lead, Delivery |
 | `/ticket-writer:spike` | Task (метка Spike) | Dev, Lead |
 | `/ticket-writer:risk` | Risk (Agile Hive) | Delivery, Lead, PM |
@@ -33,7 +33,7 @@ Ticket Writer — плагин Claude Code (формат `.claude-plugin/`). Р�
 /plugin install ticket-writer@ticket-writer
 ```
 
-После установки перезапустить Claude Code (или выполнить `/reload-plugins`) и проверить: набрать `/ticket-writer:bug` — должен появиться flow (описание команды + подсказка ввести текст бага).
+После установки перезапустить Claude Code (или выполнить `/reload-plugins`) и проверить: набрать `/ticket-writer:bug-report` — должен появиться flow (описание команды + подсказка ввести текст бага).
 
 **Для разработки/локальной проверки плагина** — без marketplace:
 
@@ -42,13 +42,13 @@ git clone https://github.com/m-lead/ticket-writer.git
 claude --plugin-dir ./ticket-writer
 ```
 
-Команды при этом тоже живут под неймспейсом плагина: `/ticket-writer:bug`, `/ticket-writer:feature` и т.д. — так Claude Code разделяет команды разных плагинов.
+Команды при этом тоже живут под неймспейсом плагина: `/ticket-writer:bug-report`, `/ticket-writer:feature` и т.д. — так Claude Code разделяет команды разных плагинов.
 
 ## Как пользоваться
 
 **Создать тикет с нуля:**
 ```
-/ticket-writer:bug на Glory на проде у VIP-игроков с нулевым балансом кнопка Deposit не открывает форму, воспроизводится всегда
+/ticket-writer:bug-report на Glory на проде у VIP-игроков с нулевым балансом кнопка Deposit не открывает форму, воспроизводится всегда
 ```
 Скилл задаст уточняющие вопросы порциями (шаги воспроизведения, устройство, приоритет и т.д.) и выдаст готовое markdown-описание со всеми обязательными полями для этого типа задачи.
 
@@ -70,7 +70,7 @@ claude --plugin-dir ./ticket-writer
 ```
 Скилл отделит фичу от задач реализации и предложит список `/ticket-writer:task` / `/ticket-writer:subtask` с Goal и AC для каждой.
 
-Полный пример вход → вопросы → ответ → выход для `/ticket-writer:bug` — в [skills/bug/SKILL.md](skills/bug/SKILL.md).
+Полный пример вход → вопросы → ответ → выход для `/ticket-writer:bug-report` — в [skills/bug-report/SKILL.md](skills/bug-report/SKILL.md).
 
 ## Структура репозитория
 
@@ -87,7 +87,7 @@ ticket-writer/
     ├── story/SKILL.md                 — /ticket-writer:story — user story
     ├── task/SKILL.md                  — /ticket-writer:task — техническая или административная задача
     ├── subtask/SKILL.md               — /ticket-writer:subtask — атомарная под-задача
-    ├── bug/SKILL.md                   — /ticket-writer:bug — баг-репорт
+    ├── bug-report/SKILL.md            — /ticket-writer:bug-report — баг-репорт
     ├── research/SKILL.md              — /ticket-writer:research — задача на исследование
     ├── spike/SKILL.md                 — /ticket-writer:spike — короткое timeboxed-исследование
     ├── risk/SKILL.md                  — /ticket-writer:risk — риск (Agile Hive)

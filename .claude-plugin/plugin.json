@@ -1,6 +1,6 @@
 {
   "name": "ticket-writer",
-  "description": "Помогает писать Jira-ready описания задач для проекта GTP через слэш-команды: /feature, /story, /task, /subtask, /bug, /research, /spike, /risk, /release, /sprint-goal, /retro-action.",
+  "description": "Помогает писать Jira-ready описания задач для проекта GTP через слэш-команды: /feature, /story, /task, /subtask, /bug-report, /research, /spike, /risk, /release, /sprint-goal, /retro-action.",
   "version": "1.0.0",
   "author": {
     "name": "Margarita Golovan"
