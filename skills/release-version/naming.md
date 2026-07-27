@@ -8,7 +8,7 @@
 [Revenue/<Stack>]: <Product> — <PI> <Sprint> <Release> — <Краткое описание>
 ```
 
-- `Stack` — `BE` (Backend) или `FE` (Frontend). Один релиз — один стек, не смешивать.
+- `Stack` — `BE` (Backend), `FE:admin` (Frontend, админка) или `FE:casino-web` (Frontend, сайт казино). Один релиз — один стек, не смешивать. Admin и casino-web — разные проекты, разные релизы, даже если катятся в один день.
 - `Product` — `Glory`, `Divine` или `Banger`. Один релиз — один продукт, не смешивать.
 - `PI` — Program Increment, например `PI8`.
 - `Sprint` — номер спринта внутри PI, например `S5`.
@@ -32,12 +32,15 @@
 2. `[Revenue/BE]: Glory — PI8 S5 R2-hotfix.1 — Фикс 500-ок в exchange-rate`
 3. `[Revenue/BE]: Glory — PI8 S5 R2-hotfix.2 — Фикс повторного списания баланса`
 
-## BE и FE одного продукта в один день
+## Несколько стеков одного продукта в один день
 
 Это два разных Version, даже если деплоятся в одну дату и относятся к одной фиче. Не объединять в одно имя/описание.
 
 - `[Revenue/BE]: Glory — PI8 S5 R1 — Бонусная система`
-- `[Revenue/FE]: Glory — PI8 S5 R1 — Бонусная система, новый UI кабинета`
+- `[Revenue/FE:casino-web]: Glory — PI8 S5 R1 — Новый UI бонусного кабинета`
+- `[Revenue/FE:admin]: Glory — PI8 S5 R1 — Управление бонусными правилами`
+
+BE, FE:admin и FE:casino-web — три независимых стека. Любая комбинация из них в один день — отдельные Version для каждого.
 
 ## Два продукта в один день
 

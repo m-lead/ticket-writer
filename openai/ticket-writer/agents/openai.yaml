@@ -1,7 +1,7 @@
 interface:
   display_name: "Ticket Writer"
-  short_description: "Готовит Jira-ready тикеты для GTP"
-  default_prompt: "Use $ticket-writer to prepare a Jira-ready GTP ticket from my notes."
+  short_description: "Готовит Jira-ready тикеты"
+  default_prompt: "Use $ticket-writer to prepare a Jira-ready ticket from my notes."
 policy:
   allow_implicit_invocation: true
 

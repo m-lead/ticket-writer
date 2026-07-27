@@ -1,8 +1,8 @@
 ---
 name: risk
 description: >
-  Помогает написать Jira-ready описание риска (Agile Hive Risk) для проекта
-  GTP. Используй когда нужно зафиксировать риск для PI Planning или текущего
+  Помогает написать Jira-ready описание риска (Agile Hive Risk) для
+  проекта. Используй когда нужно зафиксировать риск для PI Planning или текущего
   спринта. Проходит через линзу Delivery и Engineer. Вывод — markdown,
   готовый к вставке в Jira.
 argument-hint: "[описание риска или ситуации]"

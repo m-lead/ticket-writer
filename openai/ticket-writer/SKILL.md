@@ -1,11 +1,11 @@
 ---
 name: ticket-writer
-description: "Создаёт и улучшает Jira-ready описания задач для проекта GTP: feature, story, task, sub-task, bug, research, spike, risk, release, Jira Version, sprint goal и retro action. Используй для нового тикета, проверки или сокращения черновика, преобразования ADR/RFC/заметок в тикет и декомпозиции фичи."
+description: "Создаёт и улучшает Jira-ready описания задач для проекта: feature, story, task, sub-task, bug, research, spike, risk, release, Jira Version, sprint goal и retro action. Используй для нового тикета, проверки или сокращения черновика, преобразования ADR/RFC/заметок в тикет и декомпозиции фичи."
 ---
 
 # Ticket Writer
 
-Используй этот skill для подготовки Jira-ready описаний задач GTP на русском.
+Используй этот skill для подготовки Jira-ready описаний задач на русском.
 
 ## Как выбрать сценарий
 
