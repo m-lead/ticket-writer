@@ -5,13 +5,17 @@
 ## Имя версии
 
 ```
-[Revenue/<Stack>]: <Product> — <PI> <Sprint> <Release> — <Краткое описание>
+[Revenue/BE]: <PI> <Sprint> <Release> — <Краткое описание>
+[Revenue/FE]: <PI> <Sprint> <Release> — <Проект> — <Краткое описание>
 ```
+
+`Проект` — только для FE: `Админка` или `casino-web (клиент)`. Бренд в имени не указывается.
 
 Для хотфикса:
 
 ```
-[Revenue/<Stack>]: <Product> — <PI> <Sprint> <Release>-hotfix.<K> — <Описание>
+[Revenue/BE]: <PI> <Sprint> <Release>-hotfix.<K> — <Описание>
+[Revenue/FE]: <PI> <Sprint> <Release>-hotfix.<K> — <Проект> — <Описание>
 ```
 
 ## Описание версии
@@ -40,12 +44,10 @@
 
 ## Deployment Info
 
-- **Продукт:**
 - **Стек:**
+- **Первый прод:** (только для FE)
 - **Среда:** Production
 - **Дата деплоя:**
-- **Окно деплоя:** до 15:00 МСК
-- **Тип:**
 - **Спринт:**
 - **Ответственный за деплой:**
 ```
